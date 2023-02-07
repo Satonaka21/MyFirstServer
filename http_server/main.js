@@ -7,7 +7,7 @@ function setting_server() {
       "Content-Type": "text/html",
     });
 
-    const responseMessage = "<h1>Hello World, again.</h1>";
+    const responseMessage = "<h1>Hello World</h1>";
     response.end(responseMessage);
     console.log(`Sent a response : ${responseMessage}`);
   });
