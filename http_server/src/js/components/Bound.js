@@ -4,12 +4,12 @@ export default class Bound extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      acceleration_x: 0,
-      acceleration_y: 0.98,
-      velocity_x: 1,
-      velocity_y: 0,
-      coordinate_x: 0,
-      coordinate_y: 0,
+      acceleration_x: this.props.acceleration_x,
+      acceleration_y: this.props.acceleration_y,
+      velocity_x: this.props.initial_velocity_x,
+      velocity_y: this.props.initial_velocity_y,
+      coordinate_x: this.props.initial_coordinate_x,
+      coordinate_y: this.props.initial_coordinate_y,
     };
   }
 
